@@ -63,4 +63,27 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
 .more-link {
 	display: block;
 }
-/*.wp-site-blocks{background-color: var(--wp--preset--color--primary);color: var(--wp--preset--color--light);}
+.menu{
+	z-index: 10;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    padding: 70px 130px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.change-color span{
+	opacity: 0.1;
+	font-size:clamp(37.821px, 2.364rem + ((1vw - 3.2px) * 3.155), 70px);
+}
+.prod-pre {
+	display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: auto hidden;
+    padding-right: 15px;
+    scrollbar-width: none;
+}
+.prod-pre div{
+	flex: 0 0 30%;
+}
