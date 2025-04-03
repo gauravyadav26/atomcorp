@@ -66,16 +66,17 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
 .menu{
 	z-index: 10;
     position: absolute;
-    width: 100%;
+    width: 92vw;
     top: 0px;
-    padding: 70px 130px;
+    padding: 70px 4vw;
     -webkit-box-align: center;
     align-items: center;
 }
 .change-color span{
 	opacity: 0.1;
-	font-size:clamp(37.821px, 2.364rem + ((1vw - 3.2px) * 3.155), 70px);
 }
+#intro {font-size:clamp(37.821px, 2.364rem + ((1vw - 3.2px) * 3.155), 70px);}
+.span-text {font-size:clamp(24px, 1rem + ((1vw - 6.2px) * 1), 56px);font-weight: 700;}
 .prod-pre {
 	display: flex;
     flex-wrap: nowrap;
@@ -86,4 +87,18 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
 }
 .prod-pre div{
 	flex: 0 0 30%;
+}
+@media screen and (min-width: 600px) {
+	.process {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		overflow: auto hidden;
+		padding-right: 15px;
+		scrollbar-width: none;
+	}
+	.process div{
+		flex: 0 0 30%;
+	}
+	
 }
